@@ -1,0 +1,65 @@
+# Week-2-Day-02
+Dictionaries and Sets
+# 1. Create and Display Student Dictionary
+student = {
+    "roll_no": 535,
+    "name": "Malika",
+    "age": 20,
+    "course": "Electronics",
+    "marks": 85
+}
+
+print("Original Student Dictionary:")
+print(student)
+
+# 2. Add a New Element
+student["grade"] = "A
+
+print("\nDictionary After Adding 'grade':")
+print(student)
+
+# 3. Update an Existing Element
+student["marks"] = 90
+
+print("\nDictionary After Updating 'marks':")
+print(student)
+
+# 4. Delete an Element
+del student["age"]
+
+print("\nDictionary After Deleting 'age':")
+print(student)
+
+# 5. Count Word Frequency Using Dictionary
+text = "python is easy and python is powerful and easy to learn"
+
+words = text.split()
+word_frequency = {}
+
+for word in words:
+    if word in word_frequency:
+        word_frequency[word] += 1
+    else:
+        word_frequency[word] = 1
+
+print("\nWord Frequency Count:")
+print(word_frequency)
+
+# 6. Perform Set Operations
+set1 = {1, 2, 3, 4, 5}
+set2 = {4, 5, 6, 7, 8}
+
+print("\nSet 1:", set1)
+print("Set 2:", set2)
+
+# Union
+print("\nUnion:", set1.union(set2))
+
+# Intersection
+print("Intersection:", set1.intersection(set2))
+
+# Difference
+print("Difference (set1 - set2):", set1.difference(set2))
+
+# Symmetric Difference
+print("Symmetric Difference:", set1.symmetric_difference(set2))
